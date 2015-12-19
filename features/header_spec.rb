@@ -1,20 +1,8 @@
-ENV['RACK_ENV'] = 'test'
-
 require './app'
 require 'capybara'
 require 'capybara/rspec'
 
 Capybara.app = Sinatra::Application
-
-feature 'Sorry page displays correctly' do
-
-  scenario "says hello" do
-    visit '/'
-
-    expect(page).to have_text('Sorry!')
-  end
-
-end
 
 feature 'header menu displays correctly' do
 

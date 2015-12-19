@@ -1,7 +1,7 @@
-Sinatra Test App
-================
+JO Test APP
+===========
 
-Simple Ruby application with the following features
+Simple Ruby application with a 404 page.  App has the following features:
 
     * Sinatra
     * Hosted on heroku
@@ -14,7 +14,7 @@ Simple Ruby application with the following features
     * Sample client
     * Sample database integration (postgres)
     
-[Sinatra Test App on Heroku](https://guarded-caverns-3516.herokuapp.com/) 
+[Sinatra Test App on Heroku](https://pacific-ocean-5821.herokuapp.com/) 
     
 Helpful Commands
 ----------------

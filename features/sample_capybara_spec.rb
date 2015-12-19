@@ -6,13 +6,12 @@ require 'capybara/rspec'
 
 Capybara.app = Sinatra::Application
 
-feature 'Capybara Test Application' do
+feature 'Sorry page displays correctly' do
 
-  scenario "says Parnell" do
+  scenario "says Sorry" do
     visit '/'
-    click_link('Go to second page')
 
-    expect(page).to have_text('This is the second page')
+    expect(page).to have_text('Sorry!')
   end
 
 end

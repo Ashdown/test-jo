@@ -22,9 +22,9 @@ feature 'Sorry page displays correctly' do
   scenario "lists other recipes" do
     visit '/'
     expect(page).to have_text('Why not try?')
-    expect(page).to have_css('.recipes-list')
-    expect(page).find('.recipe-image').count.to equal(18);
-    expect(page).find('.recipe-title').count.to equal(18);
+    expect(page).to have_css('.recipe-list')
+    expect(page).to have_selector('.recipe-image', count: 18);
+    expect(page).to have_selector('.recipe-image', count: 18);
   end
 
 end

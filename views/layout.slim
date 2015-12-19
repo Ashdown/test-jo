@@ -3,21 +3,27 @@ html
   head
     title Jamie Oliver - Sorry!
     link href="assets/index.css" rel="stylesheet" type="text/css"
+    link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'
+    link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'
   body
     header.header
-      a href="http://www.jamieoliver.com" Jamie Oliver
-      ul.navigation-list
-        li
-          a href="/somewhere" Recipes
-        li
-          a href="/somewhere" Family Food
-        li
-          a href="/somewhere" Discover
-        li
-          a href="/somewhere" More Jamie
+      .container
+        a.logo-link href="http://www.jamieoliver.com"
+          img src="assets/logo.svg" height="77" width="205" alt="Jamie Oliver" title="Jamie Oliver"
+          span.hidden-text Jamie Oliver
+        ul.nav-list
+          li.nav-item
+            a.link href="/somewhere" Recipes
+          li.nav-item
+            a.link href="/somewhere" Family Food
+          li.nav-item
+            a.link href="/somewhere" Discover
+          li.nav-item
+            a.link href="/somewhere" More Jamie
 
-      a href="/somewhere" Sign Up/Log In
-      a href="/somewhere" Follow Jamie
+        .secondary-links
+          a.link href="/somewhere" Sign Up/Log In
+          a.link href="/somewhere" Follow Jamie
 
     == yield
 

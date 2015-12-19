@@ -1,0 +1,70 @@
+@import 'mixins';
+
+.header {
+  font-family: "Montserrat", Georgia, sans-serif;
+  font-weight: 400;
+  background-color: #62a5a1;
+  text-align: center;
+  overflow: hidden;
+
+  .link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .nav-list,
+  .secondary-links{
+    display: none;
+  }
+
+}
+
+@include respond-to(desktop) {
+
+  .header {
+
+    text-align: left;
+
+    .container {
+      width: 1020px;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+    }
+
+    .logo-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .nav-item {
+      display: inline-block;
+    }
+
+    .nav-list {
+      display: block;
+      margin: 0 260px;
+    }
+
+    .link {
+      display: inline-block;
+      padding: 0 16px;
+      line-height: 77px;
+      font-size: 12px;
+    }
+
+    .secondary-links{
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-right: solid 1px #539894;
+
+      .link {
+        border-left: solid 1px #539894;
+      }
+    }
+  }
+}

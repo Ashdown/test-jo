@@ -16,10 +16,10 @@ feature 'header menu displays correctly' do
   scenario "lists menu items" do
     visit '/'
 
-    expect(page.find('.header .navigation-list')).to have_text('Recipes')
-    expect(page.find('.header .navigation-list')).to have_text('Family Food')
-    expect(page.find('.header .navigation-list')).to have_text('Discover')
-    expect(page.find('.header .navigation-list')).to have_text('More Jamie')
+    expect(page.find('.header .nav-list')).to have_text('Recipes')
+    expect(page.find('.header .nav-list')).to have_text('Family Food')
+    expect(page.find('.header .nav-list')).to have_text('Discover')
+    expect(page.find('.header .nav-list')).to have_text('More Jamie')
 
   end
 

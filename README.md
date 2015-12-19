@@ -17,6 +17,10 @@ Simple Ruby application with a 404 page.  App has the following features:
 Helpful Commands
 ----------------
 
+Run feature tests
+
+`rake feature`
+
 Create a new Heroku app
 
 `heroku create`

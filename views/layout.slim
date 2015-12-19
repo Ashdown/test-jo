@@ -1,8 +1,24 @@
 doctype html
 html
   head
-    title My Sinatra App
+    title Jamie Oliver - Sorry!
     link href="assets/index.css" rel="stylesheet" type="text/css"
   body
+    header.header
+      a href="http://www.jamieoliver.com" Jamie Oliver
+      ul.navigation-list
+        li
+          a href="/somewhere" Recipes
+        li
+          a href="/somewhere" Family Food
+        li
+          a href="/somewhere" Discover
+        li
+          a href="/somewhere" More Jamie
+
+      a href="/somewhere" Sign Up/Log In
+      a href="/somewhere" Follow Jamie
+
     == yield
+
     script src="assets/index.js"

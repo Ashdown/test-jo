@@ -11,6 +11,9 @@
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
+    &:hover {
+      color: #1e282f;
+    }
   }
 
   .nav-list,
@@ -25,13 +28,6 @@
   .header {
 
     text-align: left;
-
-    .container {
-      width: 1020px;
-      margin: 0 auto;
-      position: relative;
-      text-align: center;
-    }
 
     .logo-link {
       position: absolute;

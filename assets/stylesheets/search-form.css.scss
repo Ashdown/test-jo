@@ -1,0 +1,31 @@
+@import '_variables';
+
+.search-form {
+  border: 2px solid #beac94;
+  max-width: 664px;
+  margin: 32px auto 0 auto;
+  position: relative;
+  padding: 0 17px 0 63px;
+
+  .text-input {
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    line-height: 52px;
+    border: none;
+    color: $textBlack;
+    display: block;
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .submit-input {
+    border: none;
+    background: #fff url("mag-glass.png") no-repeat center top;
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    top: 11px;
+    left: 17px;
+  }
+}

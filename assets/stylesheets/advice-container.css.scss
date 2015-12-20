@@ -1,0 +1,23 @@
+@import '_variables';
+
+.advice-container {
+
+  .available-text,
+  .helpful-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .available-text {
+    font-size: 18px;
+    color: #a3865b;
+    margin-top: 25px;
+  }
+
+  .helpful-text {
+    color: $textBlack;
+    font-size: 11px;
+    margin-top: 12px;
+  }
+}

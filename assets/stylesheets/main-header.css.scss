@@ -1,0 +1,24 @@
+@import '_variables';
+
+.main-header {
+  position: relative;
+  width: 682px;
+  margin: 85px auto 0 auto;
+
+  .text {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 31px 0 49px 0;
+    border-top: 1px solid $orange;
+    border-bottom: 1px solid $orange;
+    font-size: 104px;
+    display: block;
+    color: $textBlack;
+  }
+
+
+
+
+
+
+}

@@ -1,0 +1,39 @@
+@import '_variables';
+
+.shape-container {
+  $containerWidth: 15px;
+  $containerOffset: $containerWidth / 2;
+  position: absolute;
+  background-color: #fff;
+  top: -$containerOffset ;
+  &.left {
+    left: -$containerOffset;
+  }
+  &.middle {
+    left: 50%;
+    margin-left: -$containerOffset;
+  }
+  &.right {
+    right: -$containerOffset;
+  }
+  &.bottom {
+    top: auto;
+    bottom: -$containerOffset;
+  }
+
+  .circle {
+    background: transparent url("circle.png") no-repeat center top;
+    width: 5px;
+    height: 5px;
+    margin: 5px 5px 4px 5px;
+    display: inline-block;
+  }
+
+  .star {
+    background: transparent url("star.png") no-repeat center top;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+  }
+
+}

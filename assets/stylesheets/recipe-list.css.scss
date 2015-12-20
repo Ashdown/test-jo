@@ -1,31 +1,67 @@
 @import '_variables';
+@import '_mixins';
 
 .recipe-list {
   margin-top: 44px;
 
   .item {
+    width: 50%;
     float: left;
-    margin: 0 30px 84px 0;
-    width: 252px;
+
+  }
+
+  .recipe-container {
+    margin-left: 8px;
+  }
+
+  .alpha .recipe-container {
+    margin-left: 0;
+    margin-right: 8px;
   }
 
   .link {
-    text-decoration:none;
+    text-decoration: none;
   }
 
   .recipe-image {
-    width: 252px;
+    //    width: 252px;
+    width: 100%;
     height: auto;
   }
 
   .recipe-title {
     font-family: 'Average', serif;
     margin-top: 24px;
-    font-size: 24px;
+    font-size: 16px;
     color: $textBlack;
     display: block;
     clear: both;
     text-align: left;
+    height: 84px;
   }
 
+}
+
+@include respond-to(tablet) {
+  .recipe-list {
+    .item {
+      width: 25%;
+    }
+  }
+}
+
+@include respond-to(tablet) {
+  .recipe-list {
+    .item {
+      width: 16.66%;
+    }
+    .recipe-container,
+    .alpha .recipe-container {
+      margin: 0 4.8%;
+    }
+    .recipe-title {
+      font-size: 20px;
+      height: 104px;
+    }
+  }
 }

@@ -4,9 +4,8 @@
   position: relative;
   display: inline-block;
 
-  &:after {
+  .shadow {
     z-index: -10;
-    content: 'Sorry!';
     position: absolute;
     left: 5px;
     top: 3px;

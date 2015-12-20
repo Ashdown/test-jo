@@ -1,0 +1,48 @@
+@import 'variables';
+
+
+.footer {
+  background-color: #2e353e;
+  clear: both;
+  text-align: center;
+
+  .world-link,
+  .link {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .world-link {
+    font-size: 25px;
+    line-height: 62px;
+    font-family: Georgia serif;
+    color: #fff;
+  }
+
+  .footer-list {
+    border-top: 1px solid #528a87;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 13px;
+    background-color: #62a5a1;
+  }
+
+  .item {
+    display: inline-block;
+    margin-top: 13px;
+  }
+
+  .link {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    padding: 0 13px;
+    border-right: 1px solid #fff;
+    &.last {
+      border: none;
+    }
+    &:hover {
+      color: $textBlack;
+    }
+  }
+}

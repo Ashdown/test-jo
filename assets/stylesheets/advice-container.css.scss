@@ -1,9 +1,10 @@
 @import '_variables';
+@import '_mixins';
+
 
 .advice-container {
 
-  margin: 0 auto;
-  max-width: 664px;
+  margin: 0 8px;
   padding: 0 9px 30px 9px;
   border-bottom: 1px solid $orange;
   position: relative;
@@ -26,5 +27,13 @@
     color: $textBlack;
     font-size: 11px;
     margin-top: 12px;
+  }
+}
+
+@include respond-to(desktop) {
+  .advice-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 664px;
   }
 }

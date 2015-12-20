@@ -1,11 +1,14 @@
 @import 'mixins';
 
+.container {
+  text-align: center;
+}
+
 @include respond-to(desktop) {
   .container {
     width: 1020px;
     margin: 0 auto;
     position: relative;
-    text-align: center;
   }
 }
 

@@ -1,9 +1,10 @@
+@import 'variables';
 @import 'mixins';
 
 .header {
   font-family: "Montserrat", Georgia, sans-serif;
   font-weight: 400;
-  background-color: #62a5a1;
+  background-color: $light-green;
   text-align: center;
   overflow: hidden;
 

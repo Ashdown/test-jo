@@ -4,19 +4,23 @@
   $containerWidth: 15px;
   $containerOffset: $containerWidth / 2;
   position: absolute;
-  background-color: #fff;
+  background-color: $white;
   top: -$containerOffset ;
   z-index: 10;
+
   &.left {
     left: -$containerOffset;
   }
+
   &.middle {
     left: 50%;
     margin-left: -$containerOffset;
   }
+
   &.right {
     right: -$containerOffset;
   }
+
   &.bottom {
     top: auto;
     bottom: -$containerOffset;
@@ -40,5 +44,4 @@
     margin: 0 5px;
     background-position: -5px 0;
   }
-
 }

@@ -2,18 +2,18 @@
 @import '_mixins';
 
 .search-form {
-  border: 2px solid #beac94;
+  border: 2px solid $dark-orange;
   margin: 32px 10px 0 0;
   position: relative;
   padding: 0 17px 0 63px;
   background-color: #fff;
 
   .text-input {
-    font-family: "Georgia", serif;
+    font-family: $georgia-font;
     font-size: 16px;
     line-height: 52px;
     border: none;
-    color: $textBlack;
+    color: $black;
     display: block;
     &:focus {
       outline: 0;
@@ -22,7 +22,7 @@
 
   .submit-input {
     border: none;
-    background: #fff url("mag-glass.png") no-repeat center top;
+    background: $white url("mag-glass.png") no-repeat center top;
     height: 27px;
     width: 27px;
     position: absolute;
@@ -39,8 +39,8 @@
     left: 8px;
     content: '';
     z-index: -10;
-    background: transparent url("text-pattern.png") repeat left top;
-    border: 2px solid #beac94;
+    @include pattern-background;
+    border: 2px solid $dark-orange;
   }
 }
 

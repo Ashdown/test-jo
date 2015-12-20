@@ -1,7 +1,7 @@
 @import '_variables';
 
 body {
-  font-family: 'average', sans-serif;
+  font-family: $average-font;
   font-size: 10px;
 }
 
@@ -12,8 +12,8 @@ body {
 }
 
 .secondary-header {
-  font-family: Georgia, serif;
+  font-family: $georgia-font;
   font-size: 32px;
-  color: $textBlack;
+  color: $black;
   margin-top: 36px;
 }

@@ -19,3 +19,13 @@
   }
 
 }
+
+@mixin background-clip($area) {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+@mixin pattern-background() {
+  background: transparent url("text-pattern.png") repeat left top;
+}

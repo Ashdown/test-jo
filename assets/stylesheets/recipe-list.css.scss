@@ -7,7 +7,6 @@
   .item {
     width: 50%;
     float: left;
-
   }
 
   .recipe-container {
@@ -24,16 +23,14 @@
   }
 
   .recipe-image {
-    //    width: 252px;
     width: 100%;
     height: auto;
   }
 
   .recipe-title {
-    font-family: 'Average', serif;
     margin-top: 24px;
     font-size: 16px;
-    color: $textBlack;
+    color: $black;
     display: block;
     clear: both;
     text-align: left;
@@ -52,13 +49,16 @@
 
 @include respond-to(tablet) {
   .recipe-list {
+
     .item {
       width: 16.66%;
     }
+
     .recipe-container,
     .alpha .recipe-container {
       margin: 0 4.8%;
     }
+
     .recipe-title {
       font-size: 20px;
       height: 104px;

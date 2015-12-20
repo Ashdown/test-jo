@@ -1,8 +1,7 @@
 @import 'variables';
 
-
 .footer {
-  background-color: #2e353e;
+  background-color: $grey;
   clear: both;
   text-align: center;
 
@@ -15,15 +14,15 @@
   .world-link {
     font-size: 25px;
     line-height: 62px;
-    font-family: Georgia serif;
-    color: #fff;
+    font-family: $georgia-font;
+    color: $white;
   }
 
   .footer-list {
-    border-top: 1px solid #528a87;
-    border-bottom: 2px solid #fff;
+    border-top: 1px solid $dark-green;
+    border-bottom: 2px solid $white;
     padding-bottom: 13px;
-    background-color: #62a5a1;
+    background-color: $light-green;
   }
 
   .item {
@@ -32,17 +31,17 @@
   }
 
   .link {
-    font-family: Montserrat, sans-serif;
+    font-family: $montserrat-font;
     font-weight: bold;
-    color: #fff;
+    color: $white;
     display: inline-block;
     padding: 0 13px;
-    border-right: 1px solid #fff;
+    border-right: 1px solid $white;
     &.last {
       border: none;
     }
     &:hover {
-      color: $textBlack;
+      color: $black;
     }
   }
 }

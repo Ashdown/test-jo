@@ -3,22 +3,22 @@
 .drop-shadow {
   position: relative;
   display: inline-block;
+
   &:after {
     z-index: -10;
     content: 'Sorry!';
     position: absolute;
     left: 5px;
     top: 3px;
-    background: transparent url("text-pattern.png") repeat left top;
+    @include pattern-background;
     color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    @include background-clip(text);
   }
 }
 
 @include respond-to(desktop) {
   .drop-shadow {
+
     &:after {
       left: 10px;
       top: 5px;

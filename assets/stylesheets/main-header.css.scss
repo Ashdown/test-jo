@@ -6,20 +6,17 @@
   margin: 52px 8px 0 8px;
 
   .text {
-    font-family: "Montserrat", sans-serif;
+    font-family: $montserrat-font;
     text-transform: uppercase;
     padding: 16px 0 24px 0;
     border-top: 1px solid $orange;
     border-bottom: 1px solid $orange;
     font-size: 64px;
     display: block;
-    color: $textBlack;
+    color: $black;
     position: relative;
 
   }
-
-
-
 }
 
 @include respond-to(desktop) {

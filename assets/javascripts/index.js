@@ -1,2 +1,2 @@
-//= require_directory lib
-//= require_directory components
+//= require_directory ./lib
+//= require_directory ./components

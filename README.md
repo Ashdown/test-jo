@@ -12,7 +12,7 @@ Simple Ruby application with a 404 page.  App has the following features:
     * rspec testing
     * Feature testing
     
-[Sinatra Test App on Heroku](https://pacific-ocean-5821.herokuapp.com/) 
+[App on Heroku](http://pacific-ocean-5821.herokuapp.com/) 
     
 Helpful Commands
 ----------------

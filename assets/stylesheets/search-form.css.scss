@@ -3,9 +3,10 @@
 
 .search-form {
   border: 2px solid #beac94;
-  margin-top: 32px;
+  margin: 32px 10px 0 0;
   position: relative;
   padding: 0 17px 0 63px;
+  background-color: #fff;
 
   .text-input {
     font-family: "Georgia", serif;
@@ -27,6 +28,19 @@
     position: absolute;
     top: 11px;
     left: 17px;
+  }
+
+  &:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 8px;
+    content: '';
+    z-index: -10;
+    background: transparent url("text-pattern.png") repeat left top;
+    border: 2px solid #beac94;
   }
 }
 

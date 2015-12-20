@@ -1,0 +1,31 @@
+@import '_variables';
+
+.recipe-list {
+  margin-top: 44px;
+
+  .item {
+    float: left;
+    margin: 0 30px 84px 0;
+    width: 252px;
+  }
+
+  .link {
+    text-decoration:none;
+  }
+
+  .recipe-image {
+    width: 252px;
+    height: auto;
+  }
+
+  .recipe-title {
+    font-family: 'Average', serif;
+    margin-top: 24px;
+    font-size: 24px;
+    color: $textBlack;
+    display: block;
+    clear: both;
+    text-align: left;
+  }
+
+}

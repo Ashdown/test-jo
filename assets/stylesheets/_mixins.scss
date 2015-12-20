@@ -29,3 +29,8 @@
 @mixin pattern-background() {
   background: transparent url("text-pattern.png") repeat left top;
 }
+
+@mixin transition($property, $duration) {
+  -webkit-transition: $property $duration;
+  transition: $property $duration;
+}

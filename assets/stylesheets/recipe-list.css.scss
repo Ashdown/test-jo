@@ -20,6 +20,12 @@
 
   .link {
     text-decoration: none;
+    color: $black;
+    @include transition(color, 0.25s);
+
+    &:hover {
+      color: $cyan;
+    }
   }
 
   .recipe-image {
@@ -30,7 +36,6 @@
   .recipe-title {
     margin-top: 24px;
     font-size: 16px;
-    color: $black;
     display: block;
     clear: both;
     text-align: left;

@@ -6,6 +6,7 @@
   position: absolute;
   background-color: #fff;
   top: -$containerOffset ;
+  z-index: 10;
   &.left {
     left: -$containerOffset;
   }
@@ -21,8 +22,12 @@
     bottom: -$containerOffset;
   }
 
+  .circle,
+  .star {
+    background: transparent url("sprite.png") no-repeat left top;
+  }
+
   .circle {
-    background: transparent url("circle.png") no-repeat center top;
     width: 5px;
     height: 5px;
     margin: 5px 5px 4px 5px;
@@ -30,10 +35,10 @@
   }
 
   .star {
-    background: transparent url("star.png") no-repeat center top;
     width: 15px;
     height: 15px;
     margin: 0 5px;
+    background-position: -5px 0;
   }
 
 }

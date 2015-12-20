@@ -1,2 +1,2 @@
-//= require jquery
-//= require_directory .
+//= require_directory lib
+//= require_directory components
